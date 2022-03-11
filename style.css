@@ -334,4 +334,43 @@ footer
   {
     font-weight: 600;
   }
+
+
+}
+
+@media screen and (min-width:480px) and (max-width:768px) {
+  .main-message
+  {
+    text-align: center;
+  }
+  .about-me
+  {
+    text-align: center;
+  }
+  .about-me-paragraph
+  {
+    text-align: center;
+  }
+  .container
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  footer
+  {
+    position: static;
+  }
+  
+}
+@media screen and (min-width:1280px) and (max-width:1440px) {
+
+  .container .card .face {
+    width: 30rem;
+    height: 29rem;
+    
+  }
+  footer
+  {
+    position:static;
+  }
 }
