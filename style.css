@@ -265,7 +265,50 @@ footer
 
 /*---------------------Seccion de medias queries---------------------*/
 /*aqui creamos con css.json un snippset de media queries para escribir codigo mas rapido*/
-@media screen and (min-width: 320px) and (max-width:480px) {
+@media screen and (max-width:319px) {
+  body
+  {
+    text-align: center;
+  }
+  .tipography-h2
+  {
+    font-size: 3rem;
+  }
+  .tipography-h3
+  {
+    font-size: 2rem;
+  }
+  
+  .tipography-h2-about-me
+  {
+    font-size: 2rem;
+  }
+  .about-me-paragraph
+  {
+    width: 25rem;
+    font-size: 1.5rem;
+  }
+  .container
+  {
+    flex-direction: column;
+  }
+  .container .card .face {
+    width: 22rem;
+    height: 29rem;
+    margin: 0;
+    
+  }
+  .container .card:hover .face.face2 {
+    transform: translateY(-2.5rem);
+}
+  footer{
+    position: static;
+    font-size: 1rem;
+  }
+  
+  
+}
+@media screen and (min-width: 320px) and (max-width:480px){
   /*nav*/
   .main-nav 
   {
@@ -329,15 +372,13 @@ footer
     position:static;
     font-size: 1.5rem;
     text-align: center;
+    bottom: 0;
   }
   .footer,h3
   {
     font-weight: 600;
-  }
-
-
+ }
 }
-
 @media screen and (min-width:480px) and (max-width:768px) {
   .main-message
   {
@@ -362,6 +403,43 @@ footer
   }
   
 }
+@media screen and (min-width:769px) and (max-width:960px) {
+  body
+  {
+    text-align: center;
+  } 
+  .container
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .card .face {
+    width: 40rem;
+    height: 29rem;
+    
+  }
+
+  footer
+  {
+    position: static;
+  }
+
+  
+}
+@media screen and (min-width:961px) and (max-width:1279px){
+  body
+  {
+    text-align: center;
+  }
+  .container
+  {
+    flex-direction: column;
+  }
+  footer 
+  {
+    position: static;
+  }
+}
 @media screen and (min-width:1280px) and (max-width:1440px) {
 
   .container .card .face {
@@ -373,4 +451,5 @@ footer
   {
     position:static;
   }
+ }
 }
