@@ -302,12 +302,14 @@ footer
   }
   .container .card:hover .face.face2 {
     transform: translateY(-2.5rem);
-}
-}
-  footer{
+    }
+    
+    footer{
     position: static;
     font-size: 1rem;
   }
+}
+  
   
 @media screen and (min-width: 320px) and (max-width:480px){
   /*nav*/
@@ -364,8 +366,7 @@ footer
     transition: 0.5s;
     border-radius: 3rem;
     
-  }
-  
+  }  
 
   /*footer*/
   footer
@@ -378,8 +379,9 @@ footer
   .footer,h3
   {
     font-weight: 600;
- }
+  }
 }
+
 @media screen and (min-width:480px) and (max-width:768px) {
   .main-message
   {
@@ -404,6 +406,7 @@ footer
   }
   
 }
+
 @media screen and (min-width:769px) and (max-width:960px) {
   body
   {
@@ -427,6 +430,7 @@ footer
 
   
 }
+
 @media screen and (min-width:961px) and (max-width:1279px){
   body
   {
@@ -441,6 +445,7 @@ footer
     position: static;
   }
 }
+
 @media screen and (min-width:1280px) and (max-width:1440px) {
 
   .container .card .face {
@@ -452,5 +457,4 @@ footer
   {
     position:static;
   }
- }
 }
