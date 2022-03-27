@@ -10,7 +10,6 @@
 /*"hack" para conversion automatica de los px a rem*/
 html {
     font-size: 62.5%;
-    scroll-snap-type: y proximity;
 }
 body{
     font-family: 'Montserrat', sans-serif;
@@ -304,20 +303,12 @@ footer
   .container .card:hover .face.face2 {
     transform: translateY(-2.5rem);
 }
+}
   footer{
     position: static;
     font-size: 1rem;
   }
   
- .headnav,
-.main-message,
-.about-me,
-.skills-body-container,
-footer
-{
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-}
 @media screen and (min-width: 320px) and (max-width:480px){
   /*nav*/
   .main-nav 
