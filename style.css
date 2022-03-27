@@ -10,6 +10,12 @@
 /*"hack" para conversion automatica de los px a rem*/
 html {
     font-size: 62.5%;
+    scroll-snap-type: y mandatory;
+}
+.headnav, .main-message, .about-me, .skills-body-container, footer
+{
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 body{
     font-family: 'Montserrat', sans-serif;
@@ -263,7 +269,6 @@ footer
   color: var(--blanco);
 }
 /*TERMINA: FOOTER*/
-
 
 /*---------------------Seccion de medias queries---------------------*/
 /*aqui creamos con css.json un snippset de media queries para escribir codigo mas rapido*/
