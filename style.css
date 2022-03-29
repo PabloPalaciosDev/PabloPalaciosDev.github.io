@@ -10,13 +10,8 @@
 /*"hack" para conversion automatica de los px a rem*/
 html {
     font-size: 62.5%;
-    scroll-snap-type: y mandatory;
 }
-.headnav, .main-message, .about-me, .skills-body-container, footer
-{
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-}
+
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
