@@ -255,7 +255,94 @@ body{
 }
 /*TERMINA: CSS MAIN*/
 
+/*INICIA CSS FORMS*/
+
+/*TERMINA CSS FORMS*/
+.formulario
+{
+  background-color: var(--secundario);
+  width: min(50rem, 100%);
+  margin: 10rem auto;
+  padding: 1.5rem;
+  border-radius: 3rem;
+}
+.formulario fieldset
+{
+  border: none;
+}
+.formulario legend
+{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--tercerario);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.campos
+{
+  width: 100%;
+   margin-bottom: 1rem;
+}
+.campos label
+{
+  width: 100%;
+  margin-bottom: .5rem;
+  font-family:'Montserrat', sans-serif;
+  font-weight: 600;
+  color: var(--blanco);
+  display: block;
+}
+.input-text
+{
+  text-align: center;
+  width: 100%;
+  border: none;
+  border-radius: .5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  
+}
+
+.submit
+{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-family:'Montserrat', sans-serif;
+  border-radius: 1rem;
+  font-weight: 700;
+  border: none;
+  background-color: var(--primario);
+  color: var(--blanco);
+  padding: 1rem 3rem;
+}
+textarea
+{
+  height: 15rem;
+}
+.alineacion-submit
+{
+  display: flex;
+  justify-content: flex-end;
+}
+.submit:hover
+{
+  background-color: var(--tercerario);
+  cursor: pointer;
+}
+textarea
+{
+  resize: none;
+}
+
 /*INICIA: FOOTER*/
+
+
+
+
 footer
 {
   position:fixed;
@@ -380,6 +467,11 @@ footer
   {
     font-weight: 600;
   }
+
+  .formulario
+  {
+    width: 25rem;
+  }
 }
 
 @media screen and (min-width:480px) and (max-width:768px) {
@@ -402,12 +494,12 @@ footer
   }
   footer
   {
-    position: static;
+    position: fixed;
   }
   
 }
 
-@media screen and (min-width:769px) and (max-width:960px) {
+@media screen and (min-width:768px) and (max-width:960px) {
   body
   {
     text-align: center;
@@ -423,9 +515,22 @@ footer
     
   }
 
+  .contenedor-inputs
+{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto 20rem;
+  column-gap: 1rem;
+}
+.campos:nth-child(3), .campos:nth-child(4)
+{
+  grid-column: 1/ 3;
+}
+
+
   footer
   {
-    position: static;
+    position: fixed;
   }
 
   
@@ -442,7 +547,7 @@ footer
   }
   footer 
   {
-    position: static;
+    position: fixed;
   }
 }
 
@@ -455,6 +560,6 @@ footer
   }
   footer
   {
-    position:static;
+    position:fixed;
   }
 }
